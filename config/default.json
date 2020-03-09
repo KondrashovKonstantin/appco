@@ -1,0 +1,4 @@
+{
+    "port": 8000,
+    "mongoUri": "mongodb+srv://appco_user:HDbxOhMQ0Vzt13pg@cluster0-qjuoj.azure.mongodb.net/appco?retryWrites=true&w=majority   "
+}

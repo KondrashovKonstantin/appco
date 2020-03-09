@@ -1,0 +1,66 @@
+.App 
+  text-align: center
+  margin: 0 auto
+  font-family: Montserrat
+header
+  height: 72px
+  background-color: #3A80BA
+  text-align: left
+  line-height: 72px
+  font-size: 40px
+  color: white
+  padding-left: 9.2%
+  @media screen and ( max-width: 800px )
+    padding-left: 0
+    text-align: center
+footer
+  position: fixed
+  bottom: 0
+  left: 0
+  width: 100vw
+  display: flex
+  padding: 0px 9.2%
+  height: 57px
+  line-height: 57px
+  color: white
+  background: #1C3B55
+  justify-content: space-between
+  bottom: 0
+  @media screen and ( max-width: 800px )
+    font-size: 8px
+    padding: 0px 10px
+  .footer-logo
+    font-size: 24px
+    @media screen and ( max-width: 800px )
+      font-size: 14px
+
+.button
+  border: none
+  font-family: Montserrat
+  font-style: normal
+  font-weight: 400
+  width: 220px
+  font-size: 16px
+  line-height: 142%
+  padding: 17px 0
+  border-radius: 8px  
+.button_white
+  color: #255D8C
+  background: #FFFFFF
+.button_blue
+  background: #3A80BA
+  color: #FFFFFF
+.breadcrumbs
+    margin-left: 9.2%
+    margin-top: 16px
+    display: flex
+    align-self: flex-start
+    font-size: 16px
+    line-height: 24px
+    @media screen and ( max-width: 800px )
+      margin-left: calc( 50% - 100px )
+    &__item
+        color: #CCCCCC
+    &__item_active
+        color: #3A80BA
+        

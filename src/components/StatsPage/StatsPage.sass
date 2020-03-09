@@ -1,0 +1,78 @@
+.stats-page-wrapper
+    overflow: hidden
+    .table-wrapper
+        margin: 16px 9.2%
+        @media screen and ( max-width: 850px )
+            overflow: scroll
+            width: 100vw
+            margin: 16px 0
+        .stats-table
+            min-width: 500px
+            width: 100%
+            .stats-table-header
+                display: grid
+                width: 100%
+                grid-template-columns: 5% 15% 15% 22% 10% 10% 10% 13%
+                border-top-left-radius: 20px
+                border-top-right-radius: 20px
+                background: #3A80BA
+                &__item
+                    box-sizing: border-box
+                    text-overflow: ellipsis
+                    color: white
+                    height: 48px
+                    line-height: 48px
+                    border: 1px solid #fff
+                    @media screen and ( max-width: 800px )
+                        font-size: 12px
+            .stats-table-row
+                display: grid
+                grid-template-columns: 5% 15% 15% 22% 10% 10% 10% 13%
+                height: 32px
+                line-height: 32px
+                background: #F1F1F1
+                &_even
+                    display: grid
+                    grid-template-columns: 5% 15% 15% 22% 10% 10% 10% 13%
+                    height: 32px
+                    line-height: 32px
+                    background: #FBFBFB
+                &__item
+                    padding-left: 5px
+                    box-sizing: border-box
+                    overflow: hidden
+                    text-overflow: ellipsis
+                    border: 1px solid #fff
+                    @media screen and ( max-width: 800px )
+                        font-size: 12px
+    .stats-title
+        text-align: left
+        font-size: 32px
+        font-weight: bold
+        margin-top: 24px
+        margin-left: 9.2%
+        @media screen and ( max-width: 800px )
+            margin: 24px 0 0 0
+            text-align: center
+        @media screen and ( max-width: 400px )
+            font-size: 22px
+.user-link
+    text-decoration: none
+    color: black
+.preloader
+    font-size: 100px
+    margin-bottom: 150px
+    margin-top: 150px
+    color: #3A80BA
+    @media screen and ( max-width: 800px )
+        font-size: 70px
+        position: absolute
+        left: calc(50% - 35px) 
+        top: calc(50% - 35px)
+        
+        
+    
+        
+
+
+

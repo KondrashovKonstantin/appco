@@ -1,0 +1,29 @@
+.buttons-wrapper
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        margin-top: 20px  
+        margin-bottom: 10px 
+        .nav-btn
+            border: none
+            opacity: 100
+            color: #3A80BA
+            font-size: 30px
+            background-color: transparent
+            @media screen and ( max-width: 550px )
+                font-size: 15px
+            &:disabled
+                color:#F1F1F1
+        .pagination-button
+            border: 2px solid #F1F1F1
+            box-sizing: border-box
+            border-radius: 8px
+            background: white
+            margin: 4px
+            padding: 14px 19px
+            @media screen and ( max-width: 550px )
+                padding: 7px 9.5px
+        .selected
+            background: #3A80BA
+            color: white

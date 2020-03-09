@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.sass';
+import HomePage from './components/HomePage/HomePage';
+import { Route, Switch, Redirect } from 'react-router-dom';
+import ChartsContainer from './components/ChartsPage/ChartsContainer';
+import StatsContainer from './components/StatsPage/StatsContainer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+        <Route exact path='/' render={() => <HomePage />} />
+        <Route path='/'>
+          <header>AppCo</header>
+          <Route path='/stats' component={StatsContainer} />
+          <Route path='/charts/:userId?' component={ChartsContainer} />
+          <footer><span className='footer-logo'>AppCo</span><span>All rights reserved by ThemeTags</span><span>Copyrights © 2019.</span></footer>
+        </Route>
+        <Route path='/charts/:userId?' component={ChartsContainer} />
+        <Redirect to='/home' />
+      </Switch>
     </div>
   );
 }
+
+
+
 
 export default App;
